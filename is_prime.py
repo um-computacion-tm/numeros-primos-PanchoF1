@@ -29,5 +29,24 @@ class TestIsPrime(unittest.TestCase):
     def test_with_5(self):
         result = is_prime(5)
         self.assertTrue(result)
+
+    def test_with_6(self):
+        result = is_prime(6)
+        self.assertFalse(result)
     
+    def test_with_7(self):
+        result = is_prime(7)
+        self.assertTrue(result)
+    
+    def test_with_8(self):
+        result = is_prime(8)
+        self.assertFalse(result)
+    
+    def test_with_9(self):
+        result = is_prime(9)
+        self.assertFalse(result)
+    
+    def test_with_10(self):
+        result = is_prime(10)
+        self.assertFalse(result)    
 unittest.main()
